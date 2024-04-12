@@ -7,22 +7,22 @@ export default function Home() {
     {
       id: "1",
       title: "Bild 1",
-      href: "/bild/1",
+      href: "/img/1",
     },
     {
       id: "2",
       title: "Bild 2",
-      href: "/bild/2",
+      href: "/img/2",
     },
     {
       id: "3",
       title: "Bild 3",
-      href: "/bild/3",
+      href: "/img/3",
     },
     {
       id: "4",
       title: "Bild 4",
-      href: "/bild/4",
+      href: "/img/4",
     }
   ];
 
