@@ -23,27 +23,56 @@ export default function Home() {
       id: "4",
       title: "Bild 4",
       href: "/img/4",
+    },
+    {
+      id: "5",
+      title: "Bild 5",
+      href: "/img/5",
+    },
+    {
+      id: "6",
+      title: "Bild 6",
+      href: "/img/6",
+    },
+    {
+      id: "7",
+      title: "Bild 7",
+      href: "/img/7",
+    },
+    {
+      id: "8",
+      title: "Bild 8",
+      href: "/img/8",
+    },
+    {
+      id: "9",
+      title: "Bild 9",
+      href: "/img/9",
+    },
+    {
+      id: "10",
+      title: "Bild 10",
+      href: "/img/10",
     }
   ];
 
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">test test GB55</h1>
+      <h1 className="text-4xl font-bold">GB55 Bilderjagd</h1>
 
       {/* a nextjs link for each link in links in rows of 3 */}
 
       <div className="grid grid-cols-3 gap-4">
         {links.map((link) => (
-          <Link className="text-lg font-bold" key={link.id} href={link.href}>
+          <Link className="text-lg border-black rounded border-2 flex flex-col items-center p-2 hover:border-white" key={link.id} href={link.href}>
             {link.title}
           </Link>
         ))}
       </div>
 
       <p className="text-lg text-center">
-        Tipp gefällig? <br />
-        Löse ein Rätsel und ...
+        Löse ein Rätsel und hol dir einen Hinweis!
       </p>
     </main>
   );
