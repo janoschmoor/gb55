@@ -33,7 +33,7 @@ export default function KeyForm({props} : {props: {id: string}}) {
             }
             break;
         case '5':
-            if (rawFormData.key === 'GB55') {
+            if (rawFormData.key === 'test') {
                 redirect('/sol/Vws06OQ0hfGzYJpT');
             }
             break;
