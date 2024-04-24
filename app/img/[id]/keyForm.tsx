@@ -15,7 +15,7 @@ export default function KeyForm({props} : {props: {id: string}}) {
 
       console.log(processedKey);
       
-      if (processedKey == undefined) {
+      if (processedKey == undefined || processedKey.length > 100) {
         redirect('/fail');
       }
    
@@ -36,7 +36,7 @@ export default function KeyForm({props} : {props: {id: string}}) {
             }
             break;
         case '4':
-            if (processedKey.includes('beef')) {
+            if (processedKey.includes('72921')) {
                 redirect('/sol/I5MfEwwCplIQnKbnG');
             }
         case '5':

@@ -8,7 +8,7 @@ export default function Page() {
             <div className="mt-40">
                 <h3 className="text-4l font-bold">Hinweis:</h3>
 
-                <p>probiers mal auf dem dach</p>
+                <p>Es ist ein langes Bild</p>
             </div>
         </main>
     );
