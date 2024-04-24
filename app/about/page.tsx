@@ -8,7 +8,9 @@ export default function Page() {
             <div className="mt-40 flex flex-col items-center">
                 
                 
-                <p>txt</p>
+                <p>Griessli ans GB</p>
+                
+                <p className="mt-4">Übrigens, wenn du dr Dr Weber gsehsch, kasch em denn au e grüessli vom Janosch usrichte?</p>
                 
             </div>
 
