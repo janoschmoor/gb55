@@ -8,7 +8,7 @@ export default function Page() {
             <div className="mt-40">
                 <h3 className="text-4l font-bold">Hinweis:</h3>
 
-                <p>probiers mal auf dem dach</p>
+                <p>Das Bild wurde um 180° gedreht</p>
             </div>
         </main>
     );

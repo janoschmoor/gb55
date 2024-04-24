@@ -8,7 +8,7 @@ export default function Page() {
             <div className="mt-40">
                 <h3 className="text-4l font-bold">Hinweis:</h3>
 
-                <p>Ich bin in der Mediothek, man kann mich anfassen, ich bin kein Buch.</p>
+                <p>Es hilft den Blick nach oben zu richten</p>
             </div>
         </main>
     );
