@@ -10,61 +10,68 @@ export default function KeyForm({props} : {props: {id: string}}) {
       };
 
       console.log(rawFormData.key)
-    
+
+      var processedKey = rawFormData?.key?.toString().toLowerCase();
+
+      console.log(processedKey);
+      
+      if (processedKey == undefined) {
+        redirect('/fail');
+      }
    
       switch (props.id) {
         case '1':
-            if (rawFormData.key === 'GB55') {
+            if (processedKey.includes('beef')) {
                 redirect('/sol/Rp2PD5yAMSKpAdKb');
             }
             break;
         case '2':
-            if (rawFormData.key === 'test') {
+            if (processedKey.includes('ring')) {
                 redirect('/sol/VQTcTgD4mcVz1h97');
             }
             break;
         case '3':
-            if (rawFormData.key === 'test') {
+            if (processedKey.includes('37')) {
                 redirect('/sol/edhmqnnAICqnyxaP');
             }
             break;
         case '4':
-            if (rawFormData.key === 'test') {
+            if (processedKey.includes('beef')) {
+                redirect('/sol/I5MfEwwCplIQnKbnG');
+            }
+        case '5':
+            if (processedKey.includes('finger an einer hand') && (processedKey.includes('5') || processedKey.includes('fünf'))) {
                 redirect('/sol/pt7qYK6jQP0lNxVK');
             }
             break;
-        case '5':
-            if (rawFormData.key === 'test') {
+        case '6':
+            if (processedKey.includes('vektorgeometrie')) {
                 redirect('/sol/Vws06OQ0hfGzYJpT');
             }
             break;
-        case '6':
-            if (rawFormData.key === 'test') {
+        case '7':
+            if (processedKey.includes('ti-30x')) {
                 redirect('/sol/TXkZFyEuU5wsUGJK');
             }
             break;
-        case '7':
-            if (rawFormData.key === 'test') {
+        case '8':
+            if (processedKey.includes('65536')) {
                 redirect('/sol/SD2d6YaoNGXmgR2R');
             }
             break;
-        case '8':
-            if (rawFormData.key === 'test') {
+        case '9':
+            if (processedKey.includes('always')) {
                 redirect('/sol/h8VUeff0wjwhG4O9');
             }
             break;
-        case '9':
-            if (rawFormData.key === 'test') {
+        case '10':
+            if (processedKey.includes('pipi langstrumpf')) {
                 redirect('/sol/06rnJF5jmzCFSgsQ');
             }
             break;
-        case '10':
-            if (rawFormData.key === 'test') {
-                redirect('/sol/LC9gPq4RFlFJf288');
-            }
         case '11':
-            if (rawFormData.key === 'test') {
-                redirect('/sol/I5MfEwwCplIQnKbnG');
+            if (processedKey.includes('bitte')) {
+                redirect('/sol/LC9gPq4RFlFJf288');
             }
             break;
     }
