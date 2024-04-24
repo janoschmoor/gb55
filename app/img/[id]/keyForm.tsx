@@ -10,6 +10,7 @@ export default function KeyForm({props} : {props: {id: string}}) {
       };
 
       console.log(rawFormData.key)
+    
    
       switch (props.id) {
         case '1':
@@ -33,7 +34,7 @@ export default function KeyForm({props} : {props: {id: string}}) {
             }
             break;
         case '5':
-            if (rawFormData.key === 'GB55') {
+            if (rawFormData.key === 'test') {
                 redirect('/sol/Vws06OQ0hfGzYJpT');
             }
             break;
@@ -61,12 +62,33 @@ export default function KeyForm({props} : {props: {id: string}}) {
             if (rawFormData.key === 'test') {
                 redirect('/sol/LC9gPq4RFlFJf288');
             }
+        case '11':
+            if (rawFormData.key === 'test') {
+                redirect('/sol/I5MfEwwCplIQnKbnG');
+            }
             break;
     }
 
     redirect('/fail');
 
     }
+
+    // placeholders
+    const placeholders = [
+        {id: 1, value: 'Wort eingeben'},
+        {id: 2, value: 'Wort eingeben'},
+        {id: 3, value: 'Zahl eingeben'},
+        {id: 4, value: 'Code eingeben'},
+        {id: 5, value: '5 Wörter eingeben'},
+        {id: 6, value: 'Wort eingeben'},
+        {id: 7, value: 'Code eingeben'},
+        {id: 8, value: 'Zahl eingeben'},
+        {id: 9, value: 'Wort eingeben'},
+        {id: 10, value: 'Name eingeben'},
+        {id: 11, value: 'Wort eingeben'},
+    ];
+
+    const placeholder = placeholders.find((p) => p.id === parseInt(props.id));
    
     return (
         <form action={checkKey}>
@@ -74,7 +96,7 @@ export default function KeyForm({props} : {props: {id: string}}) {
                 id="key"
                 name="key"
                 type="text"
-                placeholder="Code eingeben"
+                placeholder={placeholder?.value}
                 className="px-2 py-1 bg-black border border-gray-800 rounded-l text-white outline-none"
             />
             <button
