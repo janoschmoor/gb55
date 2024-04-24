@@ -53,6 +53,11 @@ export default function Home() {
       id: "10",
       title: "Bild 10",
       href: "/img/10",
+    },
+    {
+      id: "11",
+      title: "Bild 11",
+      href: "/img/11",
     }
   ];
 

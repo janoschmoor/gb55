@@ -31,12 +31,12 @@ export default function KeyForm({props} : {props: {id: string}}) {
             }
             break;
         case '3':
-            if (processedKey.includes('37')) {
+            if (processedKey == '37') {
                 redirect('/sol/edhmqnnAICqnyxaP');
             }
             break;
         case '4':
-            if (processedKey.includes('72921')) {
+            if (processedKey == '72921') {
                 redirect('/sol/I5MfEwwCplIQnKbnG');
             }
         case '5':
@@ -55,7 +55,7 @@ export default function KeyForm({props} : {props: {id: string}}) {
             }
             break;
         case '8':
-            if (processedKey.includes('65536')) {
+            if (processedKey == '65536') {
                 redirect('/sol/SD2d6YaoNGXmgR2R');
             }
             break;
