@@ -65,7 +65,7 @@ export default function KeyForm({props} : {props: {id: string}}) {
             }
             break;
         case '10':
-            if (processedKey.includes('pipi langstrumpf')) {
+            if (processedKey.includes('pippi langstrumpf')) {
                 redirect('/sol/06rnJF5jmzCFSgsQ');
             }
             break;
