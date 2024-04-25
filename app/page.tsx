@@ -70,7 +70,7 @@ export default function Home() {
 
       <div className="grid grid-cols-3 gap-4">
         {links.map((link) => (
-          <Link className="text-lg border-black rounded border-2 flex flex-col items-center p-2 hover:border-white" key={link.id} href={link.href}>
+          <Link className="text-lg border-black bg-gray-900 rounded border-2 flex flex-col items-center p-2 hover:border-white" key={link.id} href={link.href}>
             {link.title}
           </Link>
         ))}
