@@ -99,19 +99,22 @@ export default function KeyForm({props} : {props: {id: string}}) {
    
     return (
         <form action={checkKey}>
-            <input
-                id="key"
-                name="key"
-                type="text"
-                placeholder={placeholder?.value}
-                className="px-2 py-1 bg-black border border-gray-800 rounded-l text-white outline-none"
-            />
-            <button
-                type="submit"
-                className="px-4 py-1 bg-blue-500 text-white rounded-r border border-gray-800 outline-none hover:bg-blue-700"
-            >
-                Los!
-            </button>
+            <div className="flex flex-col sm:flex-row">
+                <input
+                    id="key"
+                    name="key"
+                    type="text"
+                    autoFocus
+                    placeholder={placeholder?.value}
+                    className="px-2 py-1 bg-black border border-gray-800 rounded text-white outline-none"
+                />
+                <button
+                    type="submit"
+                    className="px-4 py-1 bg-blue-500 text-white rounded border border-gray-800 outline-none hover:bg-blue-700 sm:w-full"
+                >
+                    Los!
+                </button>
+            </div>
         </form>
     )
   }
