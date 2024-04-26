@@ -24,7 +24,7 @@ export default function RootLayout({
             <nav className="flex justify-around">
               <Link href="/" className="text-white hover:text-gray-300">Home</Link>
               <Link href="/" className="text-white hover:text-gray-300"> </Link>
-              <Link href="/about" className="text-white hover:text-gray-300">Trap</Link>
+              <Link href="/about" className="text-white hover:text-gray-300">About</Link>
             </nav>
           </footer>
         </div>
